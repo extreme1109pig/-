@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+  <title>innerHTML 예제</title>
 </head>
 <body>
+  <button id="1" onclick="innerHTML();">누르기 전(not activated)</button>
   <script>
-    
+    var 1 = document.getElementById('1');
+    function innerHTML() {
+      1.innerHTML = "누르고 난 후(activated)";
+    }
   </script>
 </body>
 </html>
